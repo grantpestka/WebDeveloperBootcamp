@@ -6,55 +6,62 @@
 <body>
 	<h1>Register</h1>
 	<form>
-		<label for="firstName">First Name:</label>
-		<input type="text" name="firstName" id="firstName" placeholder="John" required>
+		<div>
+			<label for="firstName">First Name:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="John" required>
 
-		<label for="lastName">Last Name:</label>
-		<input type="text" name="lastName" id="lastName" placeholder="Smith" required>
-		<p></p>
+			<label for="lastName">Last Name:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Smith" required>
+		</div>
 
-		<label for="male">Male</label>
-		<input id="male" type="radio" name="gender" value="male">
-		<label for="female">Female</label>
-		<input type="radio" name="gender">
-		<label for="other">Other</label>
-		<input id="other" type="radio" name="gender">
-		<p></p>
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="male">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="female">
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="gender" value="other">
+		</div>
+		
+		<div>
+			<label for="email">Email:</label>
+	 		<input id="email" type="email" name="email" placeholder="your email" required>
 
-		<label for="email">Email:</label>
-		<input id="email" type="email" name="email" placeholder="your email" required>
+	 		<label for="pasword">Password:</label>
+			<input id="pasword" type="pasword" name="password" placeholder="your password" minlength="5" maxlength="10">
+		</div>
+	
+		<div>
+			<label for="month">Birthday:</label>
+			<select id="month" name="month">
+				<option value="0" selected disabled>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+			</select>
+			<label for="day"></label>
+			<select id="day" name="day">
+		        <option value="0" selected disabled>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<label for="year"></label>
+			<select id="year" name="year">
+				<option value="0" selected disabled>Year</option>
+				<option>1991</option>
+				<option>1992</option>
+				<option>1993</option>
+				<option>1994</option>
+				<option>1995</option>
+			</select>
+		</div>
 
-		<label for="pasword">Password:</label>
-		<input id="pasword" type="pasword" name="password" placeholder="your password" minlength="5" maxlength="10">
-		<p></p>
-
-		<label for="month">Birthday:</label>
-		<select id="month" name="month">
-			<option>Jan</option>
-			<option>Feb</option>
-		</select>
-		<label for="day"></label>
-		<select id="day" name="day">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-		</select>
-		<label for="year"></label>
-		<select id="year" name="year">
-			<option>1991</option>
-			<option>1992</option>
-			<option>1993</option>
-			<option>1994</option>
-			<option>1995</option>
-		</select>
-		<p></p>
-
-		<label>I agree to the terms and conditions</label>
-		<input type="checkbox" name="agree">
-		<p></p>
-
-
+		<div>
+			<label>I agree to the terms and conditions</label>
+			<input type="checkbox" name="agree">
+		</div>
+		
 		<input type="submit">
 	</form>
 
@@ -62,3 +69,5 @@
 </html>
 
 <!-- # forgort to give everythign values. -->
+<!-- divs to great lines instead of paragraphs -->
+<!-- didnt know about selected disabled for select options -->
