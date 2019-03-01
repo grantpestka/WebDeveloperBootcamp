@@ -44,7 +44,7 @@ input {
 
 /* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
 #special {
-	border: 2px solid #0000ff;
+	border: 2px solid rgb(0,0,200);
 }
 
 
@@ -108,3 +108,5 @@ h1:hover {
 a:visited {
 	color: gray;
 }
+
+/*made #special a RGB blue*/
