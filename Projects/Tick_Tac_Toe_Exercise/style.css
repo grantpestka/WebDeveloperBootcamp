@@ -1,0 +1,31 @@
+h1 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+/*	border: 1px solid black;*/
+}
+
+table {
+	margin: 0 auto;
+}
+
+.mh {
+	border-left: 1px solid black;
+	border-right:  1px solid black;
+}
+
+.mv	{
+	border-top: 1px solid black;
+	border-bottom:  1px solid black;
+}
+
+
+.m {
+		border: 1px solid black;
+		
+
+}
