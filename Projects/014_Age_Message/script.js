@@ -12,9 +12,10 @@ function isValidAge(age) {
 		console.log(age);
 		console.log("repeat")
 	} else {
-		age;
+		
 		console.log(age);
 		console.log("end")
+		return age;
 	}
 }
 
