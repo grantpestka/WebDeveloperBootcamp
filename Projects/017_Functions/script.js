@@ -1,9 +1,5 @@
 function isEven(num){
-	if (num % 2 === 0){
-		return true
-	}else{
-		return false
-	}
+	return num % 2 === 0;
 }
 
 alert(isEven(4));
@@ -22,8 +18,8 @@ alert(factorial(7));
 
 
 function kebabToSnake(str){
-	var snk = str.replace("-","_");
+	var snk = str.replace(/-/g,"_");
 	return snk;
 }
 
-alert(kebabToSnake("hello-world"));
+alert(kebabToSnake("hello-world-again"));
