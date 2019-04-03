@@ -8,16 +8,22 @@ console.log("end setup");
 function isValidAge(age) {
 	if (age < 0 || !Number(age)){
 		age = prompt("Please enter a valid age.");
+		// console.log(age);
 		isValidAge(age);
-		console.log(age);
-		console.log("repeat")
+		// console.log(age);
+		// console.log("repeat")
+		// return "bad";
+		return age;
 	} else {
 		console.log(age);
 		console.log("end")
+		// return 1;
+		// return "good";
 		return age;
 	}
 }
 
+// console.log(isValidAge(age));
 age = isValidAge(age);
 
 console.log(age);
@@ -25,7 +31,7 @@ console.log(age);
 if (age == 21){
 	message = message + "happy 21st birthday!! ";
 }else{
-	console.log(age);
+	console.log("(21)"+age);
 }
 
 console.log(age);
@@ -34,7 +40,7 @@ console.log(age);
 if (age%2 == 1){
 	message = message + "your age is odd";
 }else{
-	console.log(age);
+	console.log("(odd)"+age);
 }
 
 
