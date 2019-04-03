@@ -1,6 +1,6 @@
 var age = prompt("age");
 // var age;
-// var pmpt = prompt("age");
+// var pmpt = Number(prompt("age"));
 var message = "";
 // console.log(age);
 // console.log("end setup");
