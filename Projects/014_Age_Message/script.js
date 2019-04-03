@@ -12,19 +12,20 @@ function isValidAge(age) {
 		console.log(age);
 		console.log("repeat")
 	} else {
-		
 		console.log(age);
 		console.log("end")
 		return age;
 	}
 }
 
-isValidAge(age);
+age = isValidAge(age);
 
 console.log(age);
 
 if (age == 21){
 	message = message + "happy 21st birthday!! ";
+}else{
+	console.log(age);
 }
 
 console.log(age);
@@ -32,6 +33,8 @@ console.log(age);
 
 if (age%2 == 1){
 	message = message + "your age is odd";
+}else{
+	console.log(age);
 }
 
 
