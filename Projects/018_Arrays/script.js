@@ -6,20 +6,27 @@ function printReverse (array){
 
 function isUniform(array){
 	var test = array[0];
-	array.forEach(function(item){
-		if(test === item){
-			return true;
-		}else{
+	// array.forEach(function(item){
+	// 	if(test === item){
+	// 		return true;
+	// 	}else{
+	// 		return false;
+	// 	}
+	// });
+	for(var i = 1; i < array.length; i++){
+		if(test !== array[i]){
 			return false;
 		}
-	});
+	}
+	return true;
 }
 
 function sumArray(array){
-	var sum = array[0];
+	var sum = 0;
 	array.forEach(function(num){
 		sum += num;
 	});
+	return sum;
 }
 
 function max(array){
@@ -29,4 +36,5 @@ function max(array){
 			max = num;
 		}
 	});
+	return max;
 }
