@@ -32,15 +32,18 @@ var movies = [
 	rating: 4,
 	haveSeen: true,
 }
-]
+];
 
-movies.forEach(function(e){
-	var seen = "";
-	if(e.haveSeen === true){
-		seen = "You have seen \"";
+movies.forEach(function(movie){
+	var seen = "You have ";
+	if(movie.haveSeen === true){
+		seen += "watched \"";
 	}else{
-		seen = "You have not seen \"";
+		seen += "not seen \"";
 	}
 
-	console.log(seen+e.title+"\" - "+e.rating+" stars")
-})
+	seen += movie.title + "\" - " + movie.rating;
+
+	console.log(seen);
+
+});
