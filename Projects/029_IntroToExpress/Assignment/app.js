@@ -15,7 +15,7 @@ app.get("/speak/:animal",function(req,res){
         "cat":  "Meow",
         "goat": "Baagh"
     }
-    var animal = req.params.animal;
+    var animal = req.params.animal.toLowerCase();
     res.send("The " + animal + " says '" + sounds[animal] + "'");
 })
 
