@@ -5,7 +5,7 @@ for(var i = 0; i < 10; i++){
     // var adv = faker.company.catchPhraseDescriptor();
     // var adv = faker.company.bsAdjective();
     // var adv = faker.company.catchPhraseNoun();
-    var adv = faker.company.catchPhrase();
+    var adv = faker.commerce.productName();
     var money = faker.commerce.price();
 
     console.log( adv +" - $" + money);
