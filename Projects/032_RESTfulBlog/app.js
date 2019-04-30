@@ -46,12 +46,24 @@ app.post("/blogs", (req,res)=>{
     Blog.create(req.body.blog, (err,newBlog)=>{
         if(err){
             res.render("new");
+            console.log(err);
         } else {
             // then, redirect to the index
             res.redirect("/blogs");
         }
     })
 })
+
+//SHOW ROUTE
+app.get("/blogs/:id", (req, res)=>{
+    Blog.findById(req.params.id, (err, foundBlog)=>{
+        if(err){
+            res.redirect("/blogs");
+        } else {
+            res.render("show", {blog: foundBlog});
+        }
+    });
+});
 
 app.listen(3000,()=>{
     console.log("Server Running");
